@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link rel="stylesheet" href="styles/portfolio.css" />
+  <script src="scripts/main.js"></script>
+  <title>Soren's Portfolio</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-default fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Soren Nelson</a>
+
+      <div class="navbar-nav float-right" id="nav-icons" style="display: none;">
+        <a class="nav-item nav-link nav-item-link" href="https://github.com/solosoren" target="_blank">
+          <img class="nav-icon" src="./Images/Icons/github-icon-light.png" />
+        </a>
+        <a class="nav-item nav-link nav-item-link" href="https://www.goodreads.com/user/show/93739941-soren-nelson"
+          target="_blank">
+          <img class="nav-icon gr-icon" src="./Images/Icons/Goodreads.png" />
+        </a>
+        <a class="nav-item nav-link nav-item-link" href="https://dribbble.com/So1oSoren" target="_blank">
+          <img class="nav-icon" src="./Images/Icons/Dribbble.png" />
+        </a>
+        <a class="nav-item nav-link nav-item-link" href="https://www.linkedin.com/in/nelsonsoren/" target="_blank">
+          <img class="nav-icon" src="./Images/Icons/Linkedin.png" />
+        </a>
+        <input class="nav-item nav-menu" type="image" src="./Images/Icons/Menu_btn.png" onclick="toggleNav();" />
+      </div>
+
+      <div class="navbar-nav float-right" id="nav-navs">
+        <a class="nav-item nav-link nav-item-link active" href="#about" onclick="navScroll(this);" id="about">
+          About
+        </a>
+        <a class="nav-item nav-link nav-item-link" href="#work" onclick="navScroll(this);" id="work">
+          Work
+        </a>
+        <a class="nav-item nav-link nav-item-link" href="#design" onclick="navScroll(this);" id="design">
+          Design
+        </a>
+        <a class="nav-item nav-link nav-item-link" href="#learning" onclick="navScroll(this);" id="learning">
+          Learning
+        </a>
+        <input class="nav-item nav-menu" type="image" src="./Images/Icons/Menu_btn.png" onclick="toggleNav();" />
+      </div>
+    </div>
+  </nav>
+  <div class="body">
+    <div class="dark-sec about" id="about-sec">
+      <div class="container">
+        <a href="#about"></a>
+        <div class="row">
+          <div class="col-lg-6">
+            <h1 class="light-header">About Me</h1>
+            <div class="underline light-underline"></div>
+            <p class="light-text about-text">
+              I’m <strong>Soren Nelson</strong>, a Computer Science Undergraduate at the University of Utah with an emphasis in Artificial Intelligence. 
+              <br>
+              <strong>I Live To Learn and Create.</strong>
+            </p>
+            <p class="light-text about-lower-text">
+              Favorite Languages: Swift, Python, C#
+            </p>
+            <p class="light-text about-lower-text">
+              I enjoy a solid camping trip, preferably with a some hiking involved. I love a clean looking app and have been known to geek out on a good book or podcast. Ideally with a cup of coffee in my hand at all times.
+            </p>
+            <p class="light-text about-lower-text">
+              <strong>Never Stop Learning. Ever.</strong> - Arnold Schwarzenegger 
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <div class="float-right">
+              <img class="headshot" src="./Images/Other_Images/Professional-Photo-Zoomed.jpeg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="work" id="work-sec">
+      <div class="container">
+        <a href="#work"></a>
+        <h1 class="dark-header">Work</h1>
+        <div class="underline dark-underline"></div>
+
+        <div class="current-proj row">
+          <div class="col-lg-6 col-md-6">
+            <img class="work-image" src="./Images/Other_Images/Media_Rec.png" />
+          </div>
+          <div class="col-lg-6 col-md-6">
+            <div class="right-col">
+              <div class="row">
+                <div class="col-10">
+                  <h2 class="dark-project-header">Media Recommendation</h2>
+                </div>
+                <div class="col-2">
+                  <a href="https://github.com/solosoren/MediaRecommendation" target="_blank">
+                    <img class="git dark-git float-right" src="./Images/Icons/github-icon-dark.png" />
+                  </a>
+                </div>
+              </div>
+
+              <h4 class="dark-subheader">Current Project</h4>
+              <p class="dark-text">
+                Media Recommendation is a personal MacOS application that recommends movies, books, and music to users. Users start by
+                rating media that they have read / watched / listened to. The application then uses an external Collaborative Filtering
+                algorithm to recommend media to the user. The Collaborative Filtering algorithm is an external library that I created.
+                It gives the client protocols to follow for their objects. The client can then use these objects with their own data to
+                train a Collaborative Filtering model and get recommendations via the trained model.
+              </p>
+              <div class="row last-row">
+                <div class="tag dark-tag">
+                  MacOS Application
+                </div>
+                <div class="tag dark-tag">
+                  Swift
+                </div>
+                <div class="tag dark-tag">
+                  Collaborative Filtering
+                </div>
+                <div class="tag dark-tag">
+                  Sketch
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="featured-proj row">
+          <div class="col-lg-6 col-md-12 col-sm-12">
+            <div class="featured-proj-head row">
+              <div class="col-4">
+                <img class="sat" src="./Images/Other_Images/Shooting_Enemy.png" />
+              </div>
+              <div class="col-8">
+                <div class="row">
+                  <div class="col-10 tr-featured-project-head">
+                    <h2 class="featured-project-header dark-project-header">
+                      SAT Vocab Game
+                    </h2>
+                  </div>
+                  <div class="col-2">
+                    <a href="https://github.com/solosoren/SAT-Vocab-Game" target="_blank">
+                      <img class="git dark-git float-right" src="./Images/Icons/github-icon-dark.png" />
+                    </a>
+                  </div>
+                </div>
+                <div class="row">
+                  <h4 class="subhead dark-subheader">Course Project</h4>
+                </div>
+                <div class="row">
+                  <div class="tag dark-tag">
+                    C / C++
+                  </div>
+                  <div class="tag dark-tag">
+                    QtCreator
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row featured-proj-text">
+              <p class="dark-text">
+                SAT Vocab Game is a speed typing educational game designed to help people learn SAT vocabulary. When the
+                game
+                starts, enemy
+                words come down the screen to attack the player. The user must type out the words in order to destroy
+                them. The goal is
+                to survive as long as possible before getting hit. The application was written in C / C++. Most of my
+                contributions were on the backend. This included creating most of our GameObject's as well as most of
+                the ObjectController. I worked along an 8 person team running 4 SCRUM week long sprints.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-12 col-sm-12">
+            <div class="right-col">
+              <div class="featured-proj-head row">
+                <div class="col-4 socialize-img">
+                  <img class="socialize" src="./Images/Other_Images/Socialize_Icon.png" />
+                </div>
+                <div class="col-7 rc-featured-proj-head">
+                  <div class="row">
+                    <div class="col-10 tr-featured-project-head">
+                      <h2 class="featured-project-header dark-project-header">
+                        Socialize
+                      </h2>
+                    </div>
+                    <div class="col-2">
+                      <a href="https://github.com/solosoren/Socialize" target="_blank">
+                        <img class="git dark-git float-right" src="./Images/Icons/github-icon-dark.png" />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <h4 class="subhead dark-subheader">Personal Project</h4>
+                  </div>
+                  <div class="row">
+                    <div class="tag dark-tag">
+                      iOS Application
+                    </div>
+                    <div class="tag dark-tag">
+                      Swift
+                    </div>
+                    <div class="tag dark-tag">
+                      Firebase
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row featured-proj-text">
+                <p class="dark-text">
+                  Socialize is an iOS Messaging App that allows you to message your iCloud friends using your
+                  iCloud
+                  account. You can also connect to new people through the app.
+                  Socialize was
+                  my personal capstone project that I completed for DevMountain, a coding bootcamp in Salt Lake City. I
+                  wrote
+                  the app in Swift and used
+                  Firebase for my database. I also designed the entire app myself. Sketch was used for the initial
+                  design. That was then transferred into XCode Storyboards.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="coded ">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-md-6">
+              <a href="https://codedcamp.com/" target="_blank" class="white-link">
+                <h2 class="light-project-header white-link">CodedCamp</h2>
+              </a>
+              <h4 class="light-subheader">Coding Mentor</h4>
+              <p class="light-text">
+                Coded is a K-12 educational coding program designed to provide students with hands-on experience
+                building iPhone,
+                Android, and Web applications. I have been a mentor since July of 2017 teaching iOS App Development, Web
+                Devolopment, and Basics of Programming. Being a mentor intels teaching courses, helping students with
+                their code, and creating course content.
+              </p>
+              <div class="row coded-tags">
+                <div class="tag light-tag">
+                  iOS App Development
+                </div>
+                <div class="tag light-tag">
+                  Web Development
+                </div>
+                <div class="tag light-tag">
+                  Basics of Programming
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 rc-coded">
+              <img class="coded-img" src="./Images/Other_Images/Coded.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="design" id="design-sec">
+      <div class="container">
+        <a href="#design"></a>
+        <h1 class="dark-header">Design</h1>
+        <div class="underline dark-underline"></div>
+        <div class="row tr-design">
+          <div class="col-lg-4">
+            <img class="tr-design-img" src="Images/Design/Calendar.gif" />
+          </div>
+          <div class="col-lg-4">
+            <img class="tr-design-img" src="Images/Design/Notes-Widget.png" />
+          </div>
+          <div class="col-lg-4">
+            <img class="tr-design-img" src="Images/Design/Music-Widget.png" />
+          </div>
+        </div>
+        <div class="row br-design">
+          <div class="col-lg-4">
+            <img class="br-design-img" src="Images/Design/Leaderboard.png" />
+          </div>
+          <div class="col-lg-8">
+            <img class="br-design-lg-img" src="Images/Design/Watch.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="dark-sec learning" id="learning-sec">
+      <div class="container">
+        <div class="coursework">
+          <a href="#learning"></a>
+          <h1 class="light-header">Learning</h1>
+          <div class="underline light-underline"></div>
+
+          <div class="row course-row">
+            <div class="col-lg-4 col-md-12 col-sm-12 no-lp">
+              <div class=row">
+                <div class="col-lg-11 no-rp">
+                  <div class="row course-head">
+                    <div class="col-3">
+                      <img class="course-img" src="./Images/Other_Images/Neural-Net.png" />
+                    </div>
+                    <div class="col-9 ">
+                      <div class="row float-right">
+                        <div class="tag light-tag">
+                          U of U
+                        </div>
+                        <div class="tag light-tag">
+                          Python
+                        </div>
+                        <a class="dark-git" href="https://github.com/solosoren/CS5350-MachineLearning" target="_blank">
+                          <img class="git show-git" src="./Images/Icons/github-icon-light.png" />
+                          <img class="git hover-git " src="./Images/Icons/github-icon-light-hover.png" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="lower-course">
+                    <div class="row">
+                      <h2 class="course-header light-project-header">
+                        Machine Learning
+                      </h2>
+                    </div>
+                    <div class="row">
+                      <h4 class="subhead light-subheader">Coursework • <a class="link" href="https://www.cs.utah.edu/~zhe/" target="_blank">Shandian Zhe</a></h4>
+                    </div>
+
+                    <div class="row">
+                      <p class="light-text">
+                        This is a collection of the Machine Learning algorithms created during the CS5350 course. The algorithms we learned include:
+                      </p>
+                      <ul class="light-text">
+                        <li>ID3 Decision Trees</li>
+                        <li>AdaBoost</li>
+                        <li>Bagged Decision Trees</li>
+                        <li>Random Forest</li>
+                        <li>Least Mean Square Linear Regression</li>
+                        <li>Batch and Stochastic Gradient Descent</li>
+                        <li>Perceptron</li>
+                        <li>Linear and Kernel SVM</li>
+                        <li>Artificial Neural Networks</li>
+                        <li>Logistic Regression</li>
+                        <li>Näive Bayes</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-12 col-sm-12 course-right">
+              <div class=row">
+                <div class="col-lg-11 no-rp">
+                  <div class="row course-head">
+                    <div class="col-3">
+                      <img class="course-img" src="./Images/Other_Images/Algorithm.png" />
+                    </div>
+                    <div class="col-9">
+                      <div class="row float-right">
+                        <div class="tag light-tag">
+                          U of U
+                        </div>
+                        <div class="tag light-tag">
+                          C#
+                        </div>
+                        <a class="dark-git" href="https://github.com/solosoren/CS4150-Algorithms" target="_blank">
+                          <img class="git show-git" src="./Images/Icons/github-icon-light.png" />
+                          <img class="git hover-git " src="./Images/Icons/github-icon-light-hover.png" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="lower-course">
+                    <div class="row">
+                      <h2 class="course-header light-project-header">
+                        CS4150 Algorithms
+                      </h2>
+                    </div>
+                    <div class="row">
+                      <h4 class="subhead light-subheader">Kattis Problems • <a class="link" href="http://www.cs.utah.edu/~hari/" target="_blank">Hari Sundar</a></h4>
+                    </div>
+
+                    <div class="row course-text">
+                      <p class="light-text">
+                        This is a collection of the algorithms I implemented throughout the CS4150 course at the University of Utah. Each algorithm is tied to a problem on Kattis. The main concepts learned throughout the course include:
+                      </p>
+                      <ul class="light-text">
+                        <li>Complexity Analysis</li>
+                        <li>Divide-and-Conquer Algorithms</li>
+                        <li>Graph Decomposition and Paths</li>
+                        <li>Number Theory Algorithms</li>
+                        <li>Greedy Programming</li>
+                        <li>Dynamic Programming</li>
+                        <li>Linear Programming</li>
+                        <li>NP Completeness</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-12 col-sm-12 course-right last-course">
+              <div class=row">
+                <div class="col-lg-11 no-rp">
+                  <div class="row course-head">
+                    <div class="col-3">
+                      <img class="course-img" src="./Images/Other_Images/Neural-Net.png" />
+                    </div>
+                    <div class="col-9">
+                      <div class="row float-right">
+                        <div class="tag light-tag">
+                          Coursera
+                        </div>
+                        <div class="tag light-tag">
+                          R
+                        </div>
+                        <a class="dark-git" href="https://github.com/solosoren/Coursera-Machine-Learning" target="_blank">
+                          <img class="git show-git" src="./Images/Icons/github-icon-light.png" />
+                          <img class="git hover-git " src="./Images/Icons/github-icon-light-hover.png" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="lower-course">
+                    <div class="row">
+                      <h2 class="course-header light-project-header">
+                        Machine Learning - Stanford
+                      </h2>
+                    </div>
+                    <div class="row">
+                      <h4 class="subhead light-subheader">Coursework • <a class="link" href="https://www.coursera.org/instructor/andrewng" target="_blank">Andrew Ng</a></h4>
+                    </div>
+                    <div class="row course-text">
+                      <p class="light-text">
+                        This is a collection of the Machine Learning algorithms I created during the the online Coursera Course. This was my first taste of Machine Learning. The algorithms we learned include:
+                      </p>
+                      <ul class="light-text">
+                        <li>Least Mean Squares Linear Regression</li>
+                        <li>Batch and Stochastic Gradient Descent</li>
+                        <li>Logistic Regression</li>
+                        <li>Artificial Neural Networks</li>
+                        <li>Support Vector Machines</li>
+                        <li>K-Means Clustering</li>
+                        <li>Principal Component Analysis</li>
+                        <li>Content Based Recommendations</li>
+                        <li>Collaborative Filtering</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="books">
+          <h1 class="light-header">Favorite Reads</h1>
+          <div class="underline light-underline"></div>
+
+          <div class="row tr-books">
+            <div class="col-lg-2 col-book">
+              <div class="row">
+                <div class="col-12">
+                  <img class="book" src="./Images/Books/WGTDD.png" />
+                </div>
+              </div>
+              <div class="row book-tags">
+                <div class="col-3">
+                  <a href="https://www.amazon.com/What-Great-Teachers-Do-Differently/dp/1930556691/ref=sr_1_6?keywords=what+great+teachers+do+differently&qid=1554011761&s=gateway&sr=8-6"
+                    target="_blank">
+                    <img class="amazon" src="./Images/Book_Icons/icons8-amazon-filled-100.png" />
+
+                  </a>
+                </div>
+                <div class="col-3 m-book-tag">
+                  <img class="amazon" src="./Images/Book_Icons/icons8-book-filled-100.png" />
+                </div>
+                <div class="col-6 r-book-tag">
+                  <div class="tag light-tag book-tag">
+                    Current
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-lg-2 col-book">
+              <div class="row">
+                <div class="col-12">
+                  <img class="book" src="./Images/Books/Wizards.png" />
+                </div>
+              </div>
+              <div class="row book-tags">
+                <div class="col-3">
+                  <a href="https://www.amazon.com/Where-Wizards-Stay-Up-Late/dp/0684812010/ref=sr_1_1?keywords=where+wizards+stay+up+late&qid=1554011867&s=gateway&sr=8-1"
+                    target="_blank">
+                    <img class="amazon" src="./Images/Book_Icons/icons8-amazon-filled-100.png" />
+                  </a>
+                </div>
+                <div class="col-3 m-book-tag">
+                  <img class="amazon" src="./Images/Book_Icons/icons8-earbud-headphones-filled-100.png" />
+                </div>
+                <div class="col-6 r-book-tag">
+                  <div class="tag light-tag book-tag">
+                    Current
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-2 col-book">
+              <div class="row">
+                <div class="col-12">
+                  <img class="book" src="./Images/Books/Atomic-Habits.png" />
+                </div>
+              </div>
+              <div class="row book-tags">
+                <div class="col-3">
+                  <a href="https://www.amazon.com/Atomic-Habits-Proven-Build-Break/dp/0735211299/ref=sr_1_1?crid=3853ML1SAR1R7&keywords=atomic+habits&qid=1554011968&s=gateway&sprefix=atomic%2Caps%2C907&sr=8-1"
+                    target="_blank">
+                    <img class="amazon" src="./Images/Book_Icons/icons8-amazon-filled-100.png" />
+                  </a>
+                </div>
+                <div class="col-3 m-book-tag">
+                  <img class="amazon" src="./Images/Book_Icons/icons8-earbud-headphones-filled-100.png" />
+                </div>
+                <div class="col-6 r-book-tag">
+                  <div class="tag light-tag book-tag">
+                    2019
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-2 col-book">
+              <div class="row">
+                <div class="col-12">
+                  <img class="book" src="./Images/Books/Master-Algorithm.png" />
+                </div>
+              </div>
+              <div class="row book-tags">
+                <div class="col-3">
+                  <a href="https://www.amazon.com/Master-Algorithm-Ultimate-Learning-Machine/dp/0465065708/ref=sr_1_2?keywords=the+master+algorithm&qid=1554012036&s=gateway&sr=8-2"
+                    target="_blank">
+                    <img class="amazon" src="./Images/Book_Icons/icons8-amazon-filled-100.png" />
+                  </a>
+                </div>
+                <div class="col-3 m-book-tag">
+                  <img class="amazon" src="./Images/Book_Icons/icons8-book-filled-100.png" />
+                </div>
+                <div class="col-6 r-book-tag">
+                  <div class="tag light-tag book-tag">
+                    2019
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2">
+              <div class="row">
+                <div class="col-12">
+                  <img class="book" src="./Images/Books/Mind-For-Numbers.png" />
+                </div>
+              </div>
+              <div class="row book-tags">
+                <div class="col-3">
+                  <a href="https://www.amazon.com/Mind-Numbers-Science-Flunked-Algebra/dp/039916524X/ref=sr_1_2?keywords=a+mind+for+numbers&qid=1554012100&s=gateway&sr=8-2"
+                    target="_blank">
+                    <img class="amazon" src="./Images/Book_Icons/icons8-amazon-filled-100.png" />
+                  </a>
+                </div>
+                <div class="col-3 m-book-tag">
+                  <img class="amazon" src="./Images/Book_Icons/icons8-earbud-headphones-filled-100.png" />
+                </div>
+                <div class="col-6 r-book-tag">
+                  <div class="tag light-tag book-tag">
+                    2019
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row br-books">
+            <div class="col-lg-2 col-book">
+              <div class="row">
+                <div class="col-12">
+                  <img class="book" src="./Images/Books/Clean-Code.png" />
+                </div>
+              </div>
+              <div class="row book-tags">
+                <div class="col-3">
+                  <a href="https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882/ref=sr_1_2?keywords=clean+code&qid=1554012179&s=gateway&sr=8-2"
+                    target="_blank">
+                    <img class="amazon" src="./Images/Book_Icons/icons8-amazon-filled-100.png" />
+                  </a>
+                </div>
+                <div class="col-3 m-book-tag">
+                  <img class="amazon" src="./Images/Book_Icons/icons8-book-filled-100.png" />
+                </div>
+                <div class="col-6 r-book-tag">
+                  <div class="tag light-tag book-tag">
+                    2017
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2 col-book">
+              <div class="row">
+                <div class="col-12">
+                  <img class="book" src="./Images/Books/Mastery.png" />
+                </div>
+              </div>
+              <div class="row book-tags">
+                <div class="col-3">
+                  <a href="https://www.amazon.com/Mastery-Robert-Greene/dp/0670024961/ref=sr_1_3?keywords=mastery&qid=1554012232&s=gateway&sr=8-3"
+                    target="_blank">
+                    <img class="amazon" src="./Images/Book_Icons/icons8-amazon-filled-100.png" />
+                  </a>
+                </div>
+                <div class="col-3 m-book-tag">
+                  <img class="amazon" src="./Images/Book_Icons/icons8-earbud-headphones-filled-100.png" />
+                </div>
+                <div class="col-6 r-book-tag">
+                  <div class="tag light-tag book-tag">
+                    2017
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2 col-book">
+              <div class="row">
+                <div class="col-12">
+                  <img class="book" src="./Images/Books/Obstacle.png" />
+                </div>
+              </div>
+              <div class="row book-tags">
+                <div class="col-3">
+                  <a href="https://www.amazon.com/Obstacle-Way-Timeless-Turning-Triumph/dp/1591846358/ref=sr_1_1?keywords=the+obstacle+is+the+way&qid=1554012284&s=gateway&sr=8-1"
+                    target="_blank">
+                    <img class="amazon" src="./Images/Book_Icons/icons8-amazon-filled-100.png" />
+                  </a>
+                </div>
+                <div class="col-3 m-book-tag">
+                  <img class="amazon" src="./Images/Book_Icons/icons8-earbud-headphones-filled-100.png" />
+                </div>
+                <div class="col-6 r-book-tag">
+                  <div class="tag light-tag book-tag">
+                    2018
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2 col-book">
+              <div class="row">
+                <div class="col-12">
+                  <img class="book" src="./Images/Books/Shoe-Dog.png" />
+                </div>
+              </div>
+              <div class="row book-tags">
+                <div class="col-3">
+                  <a href="https://www.amazon.com/Shoe-Dog-Memoir-Creator-Nike/dp/1501135910/ref=sr_1_1?keywords=shoe+dog&qid=1554012365&s=gateway&sr=8-1"
+                    target="_blank">
+                    <img class="amazon" src="./Images/Book_Icons/icons8-amazon-filled-100.png" />
+                  </a>
+                </div>
+                <div class="col-3 m-book-tag">
+                  <img class="amazon" src="./Images/Book_Icons/icons8-earbud-headphones-filled-100.png" />
+                </div>
+                <div class="col-6 r-book-tag">
+                  <div class="tag light-tag book-tag">
+                    2018
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2">
+              <div class="row">
+                <div class="col-12">
+                  <img class="book" src="./Images/Books/Deep_Work.png" />
+                </div>
+              </div>
+              <div class="row book-tags">
+                <div class="col-3">
+                  <a href="https://www.amazon.com/Deep-Work-Focused-Success-Distracted/dp/1455586692/ref=sr_1_3?keywords=deep+work&qid=1554012422&s=gateway&sr=8-3"
+                    target="_blank">
+                    <img class="amazon" src="./Images/Book_Icons/icons8-amazon-filled-100.png" />
+                  </a>
+                </div>
+                <div class="col-3 m-book-tag">
+                  <img class="amazon" src="./Images/Book_Icons/icons8-earbud-headphones-filled-100.png" />
+                </div>
+                <div class="col-6 r-book-tag">
+                  <div class="tag light-tag book-tag">
+                    2018
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,417 @@
+body {
+  font-family: "Avenir";
+  background-color: #204a60;
+}
+
+h1 {
+  margin-bottom: 20.5px;
+  font-weight: 500;
+  font-size: 27px;
+}
+
+h2 {
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 22px;
+}
+
+h4 {
+  margin-bottom: 25px;
+  font-weight: 800;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+p {
+  font-weight: 400;
+  font-size: 17px;
+}
+
+.underline {
+  height: 1px;
+  width: 244px;
+}
+
+.git {
+  width: 31px;
+  height: 31px;
+}
+
+.tag {
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 36px;
+
+  height: 35px;
+  padding-left: 7px;
+  padding-right: 7px;
+  border: 1px solid;
+  border-radius: 8px;
+
+  margin-right: 12px;
+}
+
+h2:hover.white-link {
+  color: lightgray;
+}
+
+a:hover {
+  /* background-color: transparent; */
+  text-decoration: none;
+}
+
+.link {
+  color: rgba(256, 256, 256, 0.55);
+}
+
+.link:hover {
+  color: rgba(256, 256, 256, 0.85);
+}
+
+.right-col {
+  margin-left: 40px;
+}
+
+.last-row {
+  padding-left: 15px;
+}
+
+/* Light */
+.light-header {
+  color: rgba(256, 256, 256, 0.85);
+}
+
+.light-project-header {
+  color: white;
+}
+
+.light-subheader {
+  color: rgba(256, 256, 256, 0.74);
+}
+
+.light-underline {
+  background-color: white;
+}
+
+.light-text {
+  color: rgba(256, 256, 256, 0.74);
+}
+
+.light-tag {
+  border-color: rgba(256, 256, 256, 0.74);
+  color: rgba(256, 256, 256, 0.74);
+}
+
+/* Dark */
+.dark-sec {
+  padding-top: 70px;
+  padding-bottom: 80px;
+  background-color: #204a60;
+}
+
+.dark-header {
+  padding-top: 70px;
+  color: rgb(74, 74, 74);
+}
+
+.dark-project-header {
+  color: black;
+}
+
+.dark-subheader {
+  color: rgb(120, 120, 120);
+}
+
+.dark-underline {
+  background-color: rgb(72, 72, 72);
+}
+
+.dark-text {
+  color: black;
+}
+
+.dark-tag {
+  border-color: rgb(49, 72, 95);
+  color: rgb(49, 72, 95);
+}
+
+/* .dark-git:last-child {
+  display: none;
+} */
+
+.hover-git {
+  display: none;
+}
+
+.dark-git:hover .hover-git {
+  display: block;
+}
+
+.dark-git:hover .show-git {
+  display: none;
+}
+
+/* Navbar */
+.navbar {
+  height: 90px;
+  background-color: #102d3c;
+}
+
+.navbar-brand {
+  color: white;
+}
+
+a:hover.navbar-brand {
+  color: lightgray;
+}
+
+.nav-link.active {
+  color: white;
+}
+
+.nav-link {
+  color: rgba(256, 256, 256, 0.74);
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 4px;
+}
+
+a:hover.nav-link {
+  color: white;
+}
+
+.nav-menu {
+  width: 25px;
+  height: 18px;
+  margin-top: 12px;
+  margin-left: 15px;
+}
+
+.nav-item-link {
+  margin-right: 10px;
+}
+
+.nav-icon {
+  width: 16px;
+  height: 16px;
+  margin-bottom: 3px;
+}
+
+.gr-icon {
+  margin-top: 3px;
+}
+
+.body {
+  background-color: white;
+  padding-top: 90px;
+}
+
+/* About */
+.about-text {
+  padding-top: 42.5px;
+}
+
+.about-lower-text {
+  padding-top: 8px;
+}
+
+.headshot {
+  width: 500px;
+  height: 372px;
+}
+
+/* Work */
+.current-proj {
+  padding-top: 44.5px;
+}
+
+.last-row {
+  margin-top: 0px;
+}
+
+.work-image {
+  width: 532px;
+}
+
+.featured-proj {
+  padding-top: 120px;
+}
+
+.featured-proj-head {
+  padding-bottom: 30px;
+}
+
+.rc-featured-proj-head {
+  padding-right: 0px;
+}
+
+.tr-featured-project-head {
+  padding-left: 0px;
+}
+
+.featured-project-header {
+  padding-bottom: 2px;
+}
+
+.subhead {
+  margin-bottom: 20px;
+}
+
+.featured-proj-text {
+  padding-left: 15px;
+}
+
+.sat {
+  width: 147px;
+  height: 163px;
+}
+
+.socialize {
+  width: 163px;
+  height: 163px;
+}
+
+.socialize-img {
+  width: 163px;
+  margin-right: 25px;
+}
+
+/* Coded */
+.coded {
+  margin-top: 120px;
+  background-color: #204a60;
+  padding-top: 57px;
+  padding-bottom: 57px;
+}
+
+.rc-coded {
+  padding-left: 55px;
+}
+
+.coded-img {
+  width: 536px;
+  height: 350px;
+}
+
+.coded-tags {
+  margin-top: 30px;
+  padding-left: 15px;
+}
+
+/* Design */
+.design {
+  margin-bottom: 115px;
+}
+
+.tr-design {
+  margin-top: 55px;
+}
+
+.tr-design-img {
+  width: 370px;
+  height: 278px;
+}
+
+.br-design {
+  margin-top: 8px;
+}
+
+.br-design-img {
+  width: 370px;
+  height: 448px;
+}
+
+.br-design-lg-img {
+  width: 750px;
+  height: 448px;
+}
+
+/* Courses */
+.course-row {
+  padding-top: 55px;
+}
+
+.course-head {
+  padding-bottom: 30px;
+}
+
+.course-img {
+  width: 65px;
+  height: 80px;
+}
+
+.lower-course {
+  padding-left: 15px;
+}
+
+.course-right {
+  border-left: 1px solid;
+  border-left-color: white;
+  /* margin-left: 5px; */
+  padding-left: 20px;
+}
+
+.last-course {
+  padding-right: 0px;
+}
+
+.couse-header {
+  padding-bottom: 2px;
+}
+
+.no-rp {
+  padding-right: 0px;
+}
+
+.no-lp {
+  padding-left: 0px;
+}
+
+/* Books */
+.books {
+  margin-top: 80px;
+}
+
+.tr-books {
+  margin-top: 55px;
+}
+
+.br-books {
+  margin-top: 45px;
+}
+
+.col-book {
+  margin-right: 37px;
+}
+
+.book {
+  width: 202px;
+  height: 304px;
+}
+
+.amazon {
+  width: 31px;
+  height: 31px;
+}
+
+.book-tags {
+  margin-top: 20px;
+}
+
+.m-book-tag {
+  padding-left: 8px;
+}
+
+.r-book-tag {
+  padding-left: 4px;
+}
+
+.book-tag {
+  margin-right: 0px;
+}
+
+/* .course-text {
+    width: 325px;
+} */
