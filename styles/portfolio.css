@@ -199,6 +199,11 @@ a:hover.nav-link {
   margin-bottom: 3px;
 }
 
+.nav-email {
+  margin-top: 1px;
+  height: 13px;
+}
+
 .gr-icon {
   margin-top: 3px;
 }
