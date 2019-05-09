@@ -203,6 +203,10 @@ a:hover.nav-link {
   margin-top: 3px;
 }
 
+.alert {
+  margin-bottom: 0px;
+}
+
 .body {
   background-color: white;
   padding-top: 90px;
