@@ -232,7 +232,7 @@ a:hover.nav-link {
 }
 
 /* Work */
-.current-proj {
+.top-proj {
   padding-top: 44.5px;
 }
 
@@ -242,6 +242,10 @@ a:hover.nav-link {
 
 .work-image {
   width: 532px;
+}
+
+.mrec-proj {
+  padding-top: 90px;
 }
 
 .featured-proj {
@@ -275,6 +279,18 @@ a:hover.nav-link {
 .sat {
   width: 147px;
   height: 163px;
+}
+
+.dl-img {
+  height: 135px;
+  /* width: 200px; */
+}
+
+.research-header {
+  margin-left: 30px;
+}
+.dl-header {
+  margin-left: 35px;
 }
 
 .socialize {
