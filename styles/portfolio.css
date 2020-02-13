@@ -3,6 +3,24 @@ body {
   background-color: #204a60;
 }
 
+/* div.container {
+  padding-left: 0px;
+} */
+
+.container {
+  /* margin-left: 300px;
+  margin-right: 300px; */
+  max-width: 1080px;
+}
+
+.navbar {
+  padding-left: 0px;
+}
+
+.alert {
+  padding-left: 0px;
+}
+
 h1 {
   margin-bottom: 20.5px;
   font-weight: 500;
@@ -24,7 +42,8 @@ h4 {
 
 p {
   font-weight: 400;
-  font-size: 17px;
+  font-size: 16px;
+  text-align: justify;
 }
 
 .underline {
@@ -71,7 +90,11 @@ a:hover {
 }
 
 .right-col {
-  margin-left: 40px;
+  margin-left: 20px;
+}
+
+.left-col {
+  padding-right: 25px;
 }
 
 .last-row {
@@ -219,7 +242,11 @@ a:hover.nav-link {
 
 /* About */
 .about-text {
-  padding-top: 42.5px;
+  padding-right: 25px;
+}
+
+.top-about-text {
+  padding-top: 32.5px;
 }
 
 .about-lower-text {
@@ -228,7 +255,7 @@ a:hover.nav-link {
 
 .headshot {
   width: 500px;
-  height: 372px;
+  /* height: 372px; */
 }
 
 /* Work */
@@ -244,12 +271,12 @@ a:hover.nav-link {
   width: 532px;
 }
 
-.mrec-proj {
-  padding-top: 90px;
-}
+/* .mrec-proj {
+  padding-top: 70px;
+} */
 
 .featured-proj {
-  padding-top: 120px;
+  padding-top: 70px;
 }
 
 .featured-proj-head {
@@ -274,6 +301,7 @@ a:hover.nav-link {
 
 .featured-proj-text {
   padding-left: 15px;
+  padding-right: 13px;
 }
 
 .sat {
@@ -281,16 +309,25 @@ a:hover.nav-link {
   height: 163px;
 }
 
-.dl-img {
+.header-img {
   height: 135px;
   /* width: 200px; */
 }
 
 .research-header {
-  margin-left: 30px;
+  margin-left: 45px;
 }
+
 .dl-header {
-  margin-left: 35px;
+  margin-left: 45px;
+}
+
+.book-header {
+  margin-left: 60px;
+}
+
+.normal-header {
+  margin-left: 30px;
 }
 
 .socialize {
@@ -311,13 +348,13 @@ a:hover.nav-link {
   padding-bottom: 57px;
 }
 
-.rc-coded {
-  padding-left: 55px;
+.coded-img {
+  width: 500px;
+  /* height: 350px; */
 }
 
-.coded-img {
-  width: 536px;
-  height: 350px;
+.coded-text {
+  padding-right: 25px;
 }
 
 .coded-tags {
@@ -335,27 +372,42 @@ a:hover.nav-link {
 }
 
 .tr-design-img {
-  width: 370px;
-  height: 278px;
+  /* width: 370px; */
+  height: 257px;
 }
 
 .br-design {
-  margin-top: 8px;
+  margin-top:12px;
 }
 
 .br-design-img {
-  width: 370px;
-  height: 448px;
+  /* width: 370px; */
+  height: 415.5px;
 }
 
 .br-design-lg-img {
-  width: 750px;
-  height: 448px;
+  /* width: 750px; */
+  height: 415.5px;
 }
 
 /* Courses */
+.course {
+  background-color: rgba(16, 45, 60, 0.55);
+  /* background-color: #102d3c; */
+  padding-top: 22px;
+  padding-left: 5px;
+  margin-right: 6px;
+  border-radius: 15px;
+  height: 100px;
+}
+
+/* .course:hover {
+  background-color: ;
+} */
+
 .course-row {
   padding-top: 55px;
+  padding-left: 15px;
 }
 
 .course-head {
@@ -363,20 +415,9 @@ a:hover.nav-link {
 }
 
 .course-img {
-  width: 65px;
-  height: 80px;
+  height: 45px;
 }
 
-.lower-course {
-  padding-left: 15px;
-}
-
-.course-right {
-  border-left: 1px solid;
-  border-left-color: white;
-  /* margin-left: 5px; */
-  padding-left: 20px;
-}
 
 .last-course {
   padding-right: 0px;
@@ -408,12 +449,12 @@ a:hover.nav-link {
 }
 
 .col-book {
-  margin-right: 37px;
+  margin-right: 36px;
 }
 
 .book {
-  width: 202px;
-  height: 304px;
+  width: 190px;
+  /* height: 304px; */
 }
 
 .amazon {
@@ -427,16 +468,15 @@ a:hover.nav-link {
 
 .m-book-tag {
   padding-left: 8px;
+  margin-left: 4px;
 }
 
 .r-book-tag {
   padding-left: 4px;
+  margin-left:8px;
+  /* width: 80px; */
 }
 
 .book-tag {
   margin-right: 0px;
 }
-
-/* .course-text {
-    width: 325px;
-} */
