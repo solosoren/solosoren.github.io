@@ -13,31 +13,13 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-default fixed-top">
-    <div class="container">
+  <nav class="navbar navbar-expand-lg navbar-expand-md navbar-default fixed-top">
+    <div class="container navbar-container">
       <a class="navbar-brand" href="#">Soren Nelson</a>
-
-      <div class="navbar-nav float-right" id="nav-icons" style="display: none;">
-        <a class="nav-item nav-link nav-item-link" href="mailto: sorennelson33@gmail.com">
-          <img class="nav-icon nav-email" src="./Images/Icons/Email.png" />
-        </a>
-        <a class="nav-item nav-link nav-item-link" href="https://github.com/sorennelson" target="_blank">
-          <img class="nav-icon" src="./Images/Icons/github-icon-light.png" />
-        </a>
-        <a class="nav-item nav-link nav-item-link" href="https://www.goodreads.com/user/show/93739941-soren-nelson"
-          target="_blank">
-          <img class="nav-icon gr-icon" src="./Images/Icons/Goodreads.png" />
-        </a>
-        <a class="nav-item nav-link nav-item-link" href="https://dribbble.com/So1oSoren" target="_blank">
-          <img class="nav-icon" src="./Images/Icons/Dribbble.png" />
-        </a>
-        <a class="nav-item nav-link nav-item-link" href="https://www.linkedin.com/in/nelsonsoren/" target="_blank">
-          <img class="nav-icon" src="./Images/Icons/Linkedin.png" />
-        </a>
-        <input class="nav-item nav-menu" type="image" src="./Images/Icons/Menu_btn.png" onclick="toggleNav();" />
-      </div>
-
-      <div class="navbar-nav float-right" id="nav-navs">
+      <!-- <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button> -->
+      <div class="navbar-nav collapse navbar-collapse" id="nav-navs">
         <a class="nav-item nav-link nav-item-link active" href="#about" onclick="navScroll(this);" id="about">
           About
         </a>
@@ -50,8 +32,28 @@
         <a class="nav-item nav-link nav-item-link" href="#learning" onclick="navScroll(this);" id="learning">
           Learning
         </a>
-        <input class="nav-item nav-menu" type="image" src="./Images/Icons/Menu_btn.png" onclick="toggleNav();" />
       </div>
+
+      <div class="form-inline" id="nav-icons">
+        <a class="nav-item nav-link nav-item-link my-nav-item" href="mailto: sorennelson33@gmail.com">
+          <img class="nav-icon nav-email" src="./Images/Icons/Email.png" />
+        </a>
+        <a class="nav-item nav-link nav-item-link my-nav-item" href="https://github.com/sorennelson" target="_blank">
+          <img class="nav-icon" src="./Images/Icons/github-icon-light.png" />
+        </a>
+        <a class="nav-item nav-link nav-item-link my-nav-item" href="https://www.goodreads.com/user/show/93739941-soren-nelson"
+          target="_blank">
+          <img class="nav-icon gr-icon" src="./Images/Icons/Goodreads.png" />
+        </a>
+        <a class="nav-item nav-link nav-item-link my-nav-item" href="https://dribbble.com/So1oSoren" target="_blank">
+          <img class="nav-icon" src="./Images/Icons/Dribbble.png" />
+        </a>
+        <a class="nav-item nav-link nav-item-link my-nav-item nav-last-item" href="https://www.linkedin.com/in/nelsonsoren/" target="_blank">
+          <img class="nav-icon" src="./Images/Icons/Linkedin.png" />
+        </a>
+      </div>
+  
+      
     </div>
   </nav>
   <div class="body">
@@ -63,332 +65,326 @@
     <div class="dark-sec about" id="about-sec">
       <div class="container">
         <a href="#about"></a>
-        <div class="row">
-          <div class="col-lg-6 about">
+        <div class="row justify-content-center">
+          <div class="col-lg-6 col-md-7 col-sm-9 col-11 about">
             <h1 class="light-header">About Me</h1>
             <div class="underline light-underline"></div>
-            <p class="light-text top-about-text about-text">
-              I’m <strong>Soren Nelson</strong>, an aspiring machine learning engineer.
-              I'm currently studying at the University of Utah, 
-              double majoring in Applied Mathematics and Computer Science.
-              
-            </p>
-            <p class="light-text about-lower-text about-text">
-              Favorites: Python, Swift, TensorFlow
-            </p>
-            <p class="light-text about-lower-text about-text">
-              I enjoy a solid camping trip, preferably with some hiking involved. I love a clean looking app and have
-              been known to geek out on a good book or podcast. Ideally with a cup of coffee in my hand at all times.
-            </p>
-            <p class="light-text about-lower-text about-text">
-              <strong>I Live to Learn and Create.</strong>
-            </p>
+
+            <div class="row">
+              <div class="float-lg-left col-lg-11">
+                <p class="light-text top-about-text about-text">
+                  I’m <strong>Soren Nelson</strong>, an aspiring machine learning engineer.
+                  I'm currently studying at the University of Utah, 
+                  double majoring in Applied Mathematics and Computer Science.
+                
+                </p>
+                <p class="light-text about-lower-text about-text">
+                  Favorites: Python, Swift, TensorFlow
+                </p>
+                <p class="light-text about-lower-text about-text">
+                  I enjoy a solid camping trip, preferably with some hiking involved. I love a clean looking app and have
+                  been known to geek out on a good book or podcast. Ideally with a cup of coffee in my hand at all times.
+                </p>
+                <p class="light-text about-lower-text about-text">
+                  <strong>I Live to Learn and Create.</strong>
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="col-lg-6">
-            <div class="float-right">
-              <img class="headshot" src="./Images/Other_Images/Professional-Photo-Zoomed.jpeg" />
+          <div class="col-lg-6 col-md-7 col-sm-9 col-11">
+            <div class="mt-4 mt-lg-3 row float-lg-right">     
+              <div class="col-lg-11 float-lg-right float-md-lef">
+                <img class="headshot" src="./Images/Other_Images/Professional-Photo-Zoomed.jpeg" />
+              </div>        
             </div>
           </div>
         </div>
       </div>
     </div>
+
+
     <div class="work" id="work-sec">
       <div class="container">
         <a href="#work"></a>
-        <h1 class="dark-header">Work</h1>
-        <div class="underline dark-underline"></div>
+        <div class="row justify-content-center">
+          <div class="col-lg-12 col-md-7 col-sm-9 col-11">
+             <h1 class="dark-header">Work</h1>
+          <div class="underline dark-underline"></div>
+          </div>
+        </div>
 
-        <div class="top-proj row">
-          <div class="col-lg-6 col-md-12 col-sm-12">
-            <div class="left-col">
-              <div class="featured-proj-head row">
-                <div class="col-3">
-                  <img class="header-img" src="./Images/Other_Images/qr-code.png" />
+        <div class="top-proj row justify-content-center">
+          <div class="float-lg-left col-lg-6 col-md-7 col-sm-9 col-11">
+            <div class="row">
+              <div class="float-lg-left col-lg-11">
+                <div class="featured-proj-head row">
+                  <div class="col-4">
+                    <img class="header-img" src="./Images/Other_Images/qr-code.png" />
+                  </div>
+                  <div class="col-8">
+                    <div class="row">
+                      <div class="col-10 tr-featured-project-head">
+                        <h2 class="proj-header featured-project-header dark-project-header">
+                          Deep Learning on Lensless Images
+                        </h2>
+                      </div>
+                      <div class="col-2">
+                        <a href="https://nanoptics.wordpress.com/who/" target="_blank">
+                          <img class="git dark-git float-right" src="./Images/Icons/icons8-web-50.png" />
+                        </a>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <h4 class="proj-header subhead dark-subheader">Current Research Project</h4>
+                    </div>
+                    <div class="row">
+                      <div class="proj-header tag dark-tag">
+                        Research
+                      </div>
+                      <div class="tag dark-tag">
+                        TensorFlow
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="col-9">
-                  <div class="row">
-                    <div class="col-10 tr-featured-project-head">
-                      <h2 class="research-header featured-project-header dark-project-header">
-                        Deep Learning with Optics
-                      </h2>
-                    </div>
-                    <div class="col-2">
-                      <a href="https://nanoptics.wordpress.com/who/" target="_blank">
-                        <img class="git dark-git float-right" src="./Images/Icons/icons8-web-50.png" />
-                      </a>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <h4 class="research-header subhead dark-subheader">Current Research Project</h4>
-                  </div>
-                  <div class="row">
-                    <div class="research-header tag dark-tag">
-                      Research
-                    </div>
-                    <div class="tag dark-tag">
-                      Deep Learning
-                    </div>
-                    <div class="tag dark-tag">
-                      TensorFlow
-                    </div>
-                  </div>
+                <div class="row featured-proj-text">
+                  <p class="dark-text">
+                    We are applying deep learning algorithms to both reconstruct images of QR codes taken from a lensless camera, as well as classifying their encodings. I am working with Dr. Rajesh Menon of the ECE Department. I was awarded UROP (Undergraduate Research Opportunities Program) funding for this project.
+                  </p>
                 </div>
-              </div>
-              <div class="row featured-proj-text">
-                <p class="dark-text">
-                  We are applying various deep learning algorithms to classify and reconstruct images of QR codes taken from a lensless camera. I am working with Dr. Rajesh Menon of the Electrical and Computer Engineering Department. I was awarded UROP (Undergraduate Research Opportunities Program) funding for this project.
-                </p>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-6 col-md-12 col-sm-12">
-            <div class="right-col">
-              <div class="featured-proj-head row">
-                <div class="col-5 socialize-img">
-                  <img class="header-img" src="./Images/Other_Images/dl_project.png" />
+          <div class="mt-5 mt-lg-0 float-lg-right col-lg-6 col-md-7 col-sm-9 col-11">
+            <div class="row">
+              <div class="float-lg-right col-lg-11">
+                <div class="featured-proj-head row">
+                  <div class="col-4">
+                    <img class="header-img" src="./Images/Other_Images/books.png"/>
+                  </div>
+                  <div class="col-8">
+                    <div class="row">
+                      <div class="col-10 tr-featured-project-head">
+                        <h2 class="featured-project-header proj-header dark-project-header">
+                          Reading Analysis
+                        </h2>
+                      </div>
+                      <div class="col-2">
+                        <a href="https://colab.research.google.com/drive/1-alqvBCALX2tKBr5VBCaJ_RUf0j2lKm8" target="_blank">
+                        <!-- TODO: Change icon -->
+                          <img class="git dark-git float-right" src="./Images/Icons/github-icon-dark.png" />
+                        </a>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <h4 class="subhead dark-subheader proj-header">Current Project</h4>
+                    </div>
+                    <div class="row">
+                      <div class="proj-header tag dark-tag">
+                        Python
+                      </div>
+                      <div class="tag dark-tag">
+                        Pandas
+                      </div>
+                      <div class="tag dark-tag">
+                        Altair
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="col-6 rc-featured-proj-head">
-                  <div class="row">
-                    <div class="col-10 tr-featured-project-head">
-                      <h2 class="dl-header featured-project-header dark-project-header">
-                        Scene Extension
-                      </h2>
-                    </div>
-                    <div class="col-2">
-                      <a href="https://github.com/sorennelson/Scene_Extension" target="_blank">
-                        <img class="git dark-git float-right" src="./Images/Icons/github-icon-dark.png" />
-                      </a>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <h4 class="dl-header subhead dark-subheader">Course Project</h4>
-                  </div>
-                  <div class="row">
-                    <div class="dl-header tag dark-tag">
-                      TensorFlow
-                    </div>
-                    <div class="tag dark-tag">
-                      GANs
-                    </div>
-                  </div>
+                <div class="row featured-proj-text">
+                  <p class="dark-text">
+                    A toy project trying to find some trends with the books I read. I analyze things such as what genres I prefer with what formats (physical or audio), when I read most, and some of my favorites in 2019. I also test out a visualization library - Altair.
+                  </p>
                 </div>
-              </div>
-              <div class="row featured-proj-text">
-                <p class="dark-text">
-                  We extend grayscale artistic images from WikiArt with a 4:3 aspect ratio into a 16:9 aspect ratio. To do this, we train a Generative Adversarial Network (GAN) with a U-Net style architecture for our Generator and a Discriminator modeled after VGG-16. We show our results with various loss schemes for our Discriminator.
-                </p>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="featured-proj row">
-          <div class="col-lg-6 col-md-12 col-sm-12">
-            <div class="left-col">
-              <div class="featured-proj-head row">
-                <div class="col-5">
-                  <img class="header-img" src="./Images/Other_Images/books.jpg"/>
+        <div class="featured-proj row justify-content-center">
+          <div class="float-lg-left col-lg-6 col-md-7 col-sm-10 col-sm-9 col-11">
+            <div class="row">
+              <div class="float-lg-left col-lg-11">
+                <div class="featured-proj-head row">
+                  <div class="col-4 socialize-img">
+                    <img class="header-img" src="./Images/Other_Images/Media_Rec.png" />
+                  </div>
+                  <div class="col-7 rc-featured-proj-head">
+                    <div class="row">
+                      <div class="col-10 tr-featured-project-head">
+                        <h2 class="normal-header featured-project-header dark-project-header">
+                          Media Rec
+                        </h2>
+                      </div>
+                      <div class="col-2">
+                        <a href="https://github.com/sorennelson/MediaRecommendation" target="_blank">
+                          <img class="git dark-git float-right" src="./Images/Icons/github-icon-dark.png" />
+                        </a>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <h4 class="normal-header subhead dark-subheader">Personal Project</h4>
+                    </div>
+                    <div class="row">
+                      <div class="normal-header tag dark-tag">
+                        Swift
+                      </div>
+                      <div class="tag dark-tag">
+                        Django
+                      </div>
+                      <div class="tag dark-tag">
+                        PostgreSQL
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="col-7">
-                  <div class="row">
-                    <div class="col-10 tr-featured-project-head">
-                      <h2 class="featured-project-header book-header dark-project-header">
-                        Book Analysis
-                      </h2>
-                    </div>
-                    <div class="col-2">
-                      <a href="https://colab.research.google.com/drive/1-alqvBCALX2tKBr5VBCaJ_RUf0j2lKm8" target="_blank">
-                      <!-- TODO: Change icon -->
-                        <img class="git dark-git float-right" src="./Images/Icons/github-icon-dark.png" />
-                      </a>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <h4 class="subhead dark-subheader book-header">Personal Project</h4>
-                  </div>
-                  <div class="row">
-                    <div class="book-header tag dark-tag">
-                      Python
-                    </div>
-                    <div class="tag dark-tag">
-                      Pandas
-                    </div>
-                    <div class="tag dark-tag">
-                      Altair
-                    </div>
-                  </div>
+                <div class="row featured-proj-text">
+                  <p class="dark-text">
+                    Media Recommendation is a MacOS application that recommends movies and books to users. Users start by rating media that they have read or watched. The application then uses a Collaborative Filtering algorithm to recommend new media to the user based on their and other user's ratings.
+                  </p>
                 </div>
-              </div>
-              <div class="row featured-proj-text">
-                <p class="dark-text">
-                  A toy project trying to find some trends with the books I read. I analyze things such as what genres I prefer with what formats (physical or audio), when I read most, and some of my favorites in 2019. I also test out a visualization library - Altair.
-                </p>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-6 col-md-12 col-sm-12">
-            <div class="right-col">
-              <div class="featured-proj-head row">
-                <div class="col-4 socialize-img">
-                  <img class="header-img" src="./Images/Other_Images/Media_Rec.png" />
+          <div class="mt-5 mt-lg-0 float-lg-right col-lg-6 col-md-7 col-sm-9 col-11">
+            <div class="row">
+              <div class="float-lg-right col-lg-11">
+                <div class="featured-proj-head row">
+                  <div class="col-5 socialize-img">
+                    <img class="header-img" src="./Images/Other_Images/dl_project.png" />
+                  </div>
+                  <div class="col-6 rc-featured-proj-head">
+                    <div class="row">
+                      <div class="col-10 tr-featured-project-head">
+                        <h2 class="dl-header featured-project-header dark-project-header">
+                          Scene Extension
+                        </h2>
+                      </div>
+                      <div class="col-2">
+                        <a href="https://github.com/sorennelson/Scene_Extension" target="_blank">
+                          <img class="git dark-git float-right" src="./Images/Icons/github-icon-dark.png" />
+                        </a>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <h4 class="dl-header subhead dark-subheader">Course Project</h4>
+                    </div>
+                    <div class="row">
+                      <div class="dl-header tag dark-tag">
+                        TensorFlow
+                      </div>
+                      <div class="tag dark-tag">
+                        GANs
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="col-7 rc-featured-proj-head">
-                  <div class="row">
-                    <div class="col-10 tr-featured-project-head">
-                      <h2 class="normal-header featured-project-header dark-project-header">
-                        Media Rec
-                      </h2>
-                    </div>
-                    <div class="col-2">
-                      <a href="https://github.com/sorennelson/MediaRecommendation" target="_blank">
-                        <img class="git dark-git float-right" src="./Images/Icons/github-icon-dark.png" />
-                      </a>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <h4 class="normal-header subhead dark-subheader">Personal Project</h4>
-                  </div>
-                  <div class="row">
-                    <div class="normal-header tag dark-tag">
-                      Swift
-                    </div>
-                    <div class="tag dark-tag">
-                      Django
-                    </div>
-                    <div class="tag dark-tag">
-                      PostgreSQL
-                    </div>
-                  </div>
+                <div class="row featured-proj-text">
+                  <p class="dark-text">
+                    We extend grayscale artistic images from WikiArt with a 4:3 aspect ratio into a 16:9 aspect ratio. To do this, we train a Generative Adversarial Network (GAN) with a U-Net style architecture for our Generator and a Discriminator modeled after VGG-16. We show our results with various loss schemes for our Discriminator.
+                  </p>
                 </div>
-              </div>
-              <div class="row featured-proj-text">
-                <p class="dark-text">
-                  Media Recommendation is a MacOS application that recommends movies and books to users. Users start by rating media that they have read or watched. The application then uses a Collaborative Filtering algorithm to recommend new media to the user based on their and other user's ratings.
-                </p>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- <div class="mrec-proj row">
-          <div class="col-lg-6 col-md-6">
-            <img class="work-image" src="./Images/Other_Images/Media_Rec.png" />
-          </div>
-          <div class="col-lg-6 col-md-6">
-            <div class="right-col">
-              <div class="row">
-                <div class="col-10">
-                  <h2 class="dark-project-header">Media Recommendation</h2>
-                </div>
-                <div class="col-2">
-                  <a href="https://github.com/sorennelson/MediaRecommendation" target="_blank">
-                    <img class="git dark-git float-right" src="./Images/Icons/github-icon-dark.png" />
-                  </a>
-                </div>
-              </div>
-
-              <h4 class="dark-subheader">Personal Project</h4>
-              <p class="dark-text">
-                
-              </p>
-              <div class="row last-row">
-                
-              </div>
-            </div>
-          </div>
-        </div> -->
-
-        <div class="featured-proj row">
-          <div class="col-lg-6 col-md-12 col-sm-12">
-            <div class="left-col">
-              <div class="featured-proj-head row">
-                <div class="col-3">
-                  <img class="header-img" src="./Images/Other_Images/Shooting_Enemy.png" />
-                </div>
-                <div class="col-9">
-                  <div class="row">
-                    <div class="col-10 tr-featured-project-head">
-                      <h2 class="featured-project-header normal-header dark-project-header">
-                        SAT Vocab Game
-                      </h2>
-                    </div>
-                    <div class="col-2">
-                      <a href="https://github.com/sorennelson/SAT-Vocab-Game" target="_blank">
-                        <img class="git dark-git float-right" src="./Images/Icons/github-icon-dark.png" />
-                      </a>
-                    </div>
+        <div class="featured-proj row justify-content-center">
+          <div class="float-lg-left col-lg-6 col-md-7 col-sm-9 col-11">
+            <div class="row">
+              <div class="float-lg-left col-lg-11">
+                <div class="featured-proj-head row">
+                  <div class="col-3">
+                    <img class="header-img" src="./Images/Other_Images/Shooting_Enemy.png" />
                   </div>
-                  <div class="row">
-                    <h4 class="subhead dark-subheader normal-header">Course Project</h4>
-                  </div>
-                  <div class="row">
-                    <div class="normal-header tag dark-tag">
-                      C++
+                  <div class="col-9">
+                    <div class="row">
+                      <div class="col-10 tr-featured-project-head">
+                        <h2 class="featured-project-header normal-header dark-project-header">
+                          SAT Vocab Game
+                        </h2>
+                      </div>
+                      <div class="col-2">
+                        <a href="https://github.com/sorennelson/SAT-Vocab-Game" target="_blank">
+                          <img class="git dark-git float-right" src="./Images/Icons/github-icon-dark.png" />
+                        </a>
+                      </div>
                     </div>
-                    <div class="tag dark-tag">
-                      QtCreator
+                    <div class="row">
+                      <h4 class="subhead dark-subheader normal-header">Course Project</h4>
+                    </div>
+                    <div class="row">
+                      <div class="normal-header tag dark-tag">
+                        C++
+                      </div>
+                      <div class="tag dark-tag">
+                        QtCreator
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="row featured-proj-text">
-                <p class="dark-text">
-                  SAT Vocab Game is a speed typing educational game designed to help people learn SAT vocab. When the
-                  game
-                  starts, enemy
-                  words come down the screen to attack the player. The user must type out the words in order to destroy
-                  them. The goal is
-                  to survive as long as possible before getting hit. 
-                </p>
+                <div class="row featured-proj-text">
+                  <p class="dark-text">
+                    SAT Vocab Game is a speed typing educational game designed to help people learn SAT vocab. When the
+                    game
+                    starts, enemy
+                    words come down the screen to attack the player. The user must type out the words in order to destroy
+                    them. The goal is
+                    to survive as long as possible before getting hit. 
+                  </p>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-6 col-md-12 col-sm-12">
-            <div class="right-col">
-              <div class="featured-proj-head row">
-                <div class="col-3 socialize-img">
-                  <img class="header-img" src="./Images/Other_Images/Socialize_Icon.png" />
+          <div class="mt-5 mt-lg-0 float-lg-right col-lg-6 col-md-7 col-sm-9 col-11">
+            <div class="row">
+              <div class="float-lg-right col-lg-11">
+                <div class="featured-proj-head row">
+                  <div class="col-3 socialize-img">
+                    <img class="header-img" src="./Images/Other_Images/Socialize_Icon.png" />
+                  </div>
+                  <div class="col-8 rc-featured-proj-head">
+                    <div class="row">
+                      <div class="col-10 tr-featured-project-head">
+                        <h2 class="normal-header featured-project-header dark-project-header">
+                          Socialize
+                        </h2>
+                      </div>
+                      <div class="col-2">
+                        <a href="https://github.com/sorennelson/Socialize" target="_blank">
+                          <img class="git dark-git float-right" src="./Images/Icons/github-icon-dark.png" />
+                        </a>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <h4 class="normal-header subhead dark-subheader">Personal Project</h4>
+                    </div>
+                    <div class="row">
+                      <div class="normal-header tag dark-tag">
+                        iOS Application
+                      </div>
+                      <div class="tag dark-tag">
+                        Swift
+                      </div>
+                      <div class="tag dark-tag">
+                        Firebase
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="col-8 rc-featured-proj-head">
-                  <div class="row">
-                    <div class="col-10 tr-featured-project-head">
-                      <h2 class="normal-header featured-project-header dark-project-header">
-                        Socialize
-                      </h2>
-                    </div>
-                    <div class="col-2">
-                      <a href="https://github.com/sorennelson/Socialize" target="_blank">
-                        <img class="git dark-git float-right" src="./Images/Icons/github-icon-dark.png" />
-                      </a>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <h4 class="normal-header subhead dark-subheader">Personal Project</h4>
-                  </div>
-                  <div class="row">
-                    <div class="normal-header tag dark-tag">
-                      iOS Application
-                    </div>
-                    <div class="tag dark-tag">
-                      Swift
-                    </div>
-                    <div class="tag dark-tag">
-                      Firebase
-                    </div>
-                  </div>
+                <div class="row featured-proj-text">
+                  <p class="dark-text">
+                    Socialize is an iOS Messaging app that allows you to message your iCloud friends using your
+                    iCloud
+                    account. You can also connect to new people through the app.
+                    Socialize was
+                    my personal capstone project that I completed for DevMountain, an iOS programming bootcamp.
+                  </p>
                 </div>
-              </div>
-              <div class="row featured-proj-text">
-                <p class="dark-text">
-                  Socialize is an iOS Messaging app that allows you to message your iCloud friends using your
-                  iCloud
-                  account. You can also connect to new people through the app.
-                  Socialize was
-                  my personal capstone project that I completed for DevMountain, an iOS programming bootcamp.
-                </p>
               </div>
             </div>
           </div>
@@ -406,7 +402,7 @@
               <p class="light-text coded-text">
                 Coded is a K-12 educational coding program designed to provide students with hands-on experience
                 building iPhone,
-                Android, and Web applications. I have been a mentor since July of 2017 teaching iOS App Development, Web
+                Android, and Web applications. I have been a mentor since July of 2017 teaching courses on iOS App Development, Web
                 Devolopment, and Basics of Programming.
               </p>
               <div class="row coded-tags">
