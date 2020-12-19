@@ -235,8 +235,12 @@ p {
   width: 244px;
 }
 
+.pub-underline {
+  margin-bottom: 32.5px;
+}
+
 .work-underline {
-  margin-bottom: 60px;
+  margin-bottom: 32.5px;
 }
 
 .center-icon {
@@ -260,6 +264,10 @@ p {
 .git {
   width: 28px;
   height: 28px;
+}
+
+.app-icon {
+  height: 30px;
 }
 
 .subheader {
@@ -482,19 +490,39 @@ a:hover.nav-link {
 /* .top-proj {
   padding-top: 44.5px;
 }
+*/
 
-.featured-proj {
+ol li {
+  margin-bottom: 5px;
+}
+
+ol {
+  padding-left: 25px;
+  margin-bottom: 0px;
+}
+
+.work-exp {
+  padding-top: 70px;
+}
+
+.work-subheader {
+  margin-bottom: 25px;
+}
+
+.work-body {
+  margin-bottom: -16px;
+}
+
+.work-tags {
   padding-top: 20px;
+  padding-left: 15px;
 }
 
-.featured-proj-head {
-  margin-bottom: 22px;
+.work-left-tag {
+  margin-left: 8px;
 }
 
-.proj-tags {
-  padding-left: 20px;
-}
-
+/*
 .subhead {
   margin-bottom: 0px;
 }
@@ -508,13 +536,57 @@ a:hover.nav-link {
   margin-left: 5px;
 } */
 
+.project-back-img {
+  margin-top: 20px;
+}
+
 .header-img {
   width: 100%;
 }
 
+.project-row {
+  margin-top: 30px;
+}
+
+.project {
+  padding: 30px;
+  margin-left: 0px;
+  
+  margin-right: 0px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}
+
+.project-back {
+  display: none;
+}
+
+.project:hover .project-back {
+  display: inline;
+}
+
+.project:hover .project-tags {
+  padding-top: 20px;
+}
+
+.project-tags {
+  padding-top: 0px;
+  padding-left: 15px;
+}
+
+@media (max-width: 767px) {                  
+  .project-back {
+     display: inline;
+  }
+  .project-tags {
+    padding-top: 20px;
+  }
+}
+
+
 /* Coded */
 .coded {
-  margin-top:50px;
+  margin-top:70px;
   background-color: #204a60;
   padding-top: 70px;
   padding-bottom: 70px;
@@ -528,6 +600,7 @@ a:hover.nav-link {
   margin-top: 30px;
   padding-left: 15px;
 }
+
 
 /* Design */
 .design {
