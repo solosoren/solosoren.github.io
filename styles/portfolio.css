@@ -630,8 +630,11 @@ ol {
 }
 
 .course-row {
-  padding-top: 55px;
   padding-left: 15px;
+}
+
+.top-course-row {
+  padding-top: 55px;
 }
 
 .course-head {
